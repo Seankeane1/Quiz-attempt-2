@@ -1,0 +1,1 @@
+const finalScore = document.querySelector(".score-value")

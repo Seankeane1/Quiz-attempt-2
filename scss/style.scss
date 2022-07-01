@@ -8,7 +8,7 @@ body {
     background-color: rgb(104, 15, 107);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    //align-items: center;
 }
 
 header {
@@ -19,4 +19,34 @@ header {
     font-size: 16mm;
 }
 
-.container {}
+.container {
+    display: flex;
+    color: white;
+    padding-top: 3vh;
+}
+
+#question-1 {
+    padding-bottom: 10vh;
+}
+
+.choices {
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 4vh;
+}
+
+.score-text {
+    font-size: 3vh;
+}
+
+.score-final {
+    font-size: 6vh;
+    padding-top: 3vh;
+    display: inline-flex;
+}
