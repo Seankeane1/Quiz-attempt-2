@@ -111,7 +111,7 @@
 
 
     function buildQuiz() {
-      // we'll need a place to store the HTML output
+        // we'll need a place to store the HTML output
       const output = [];
   
       // for each question...
@@ -155,7 +155,7 @@
 
 
 
-    
+
 
 
 
@@ -202,7 +202,8 @@
     
     
     function showSlide(n) {
-      slides[currentSlide].classList.remove("active-slide");
+      
+        slides[currentSlide].classList.remove("active-slide");
       slides[n].classList.add("active-slide");
       currentSlide = n;
       
@@ -239,7 +240,6 @@
 
 
 
-
     // all the DOMSelectors
   
     const quizContainer = document.getElementById("quiz");
@@ -252,6 +252,9 @@
     const previousButton = document.getElementById("previous");
     const nextButton = document.getElementById("next");
     const slides = document.querySelectorAll(".slide");
+
+// assigning the questions the css class of slide
+
     let currentSlide = 0;
   
     showSlide(0);
@@ -260,4 +263,8 @@
     submitButton.addEventListener("click", showResults);
     previousButton.addEventListener("click", showPreviousSlide);
     nextButton.addEventListener("click", showNextSlide);
+
+    //console.log(slides);
+
   })();
+
