@@ -118,6 +118,8 @@
       myQuestions.forEach((currentQuestion, questionNumber) => {
         // we'll want to store the list of answer choices
         const answers = [];
+
+        // answers comes straight from the array
   
         // and for each available answer...
         for (letter in currentQuestion.answers) {
@@ -268,3 +270,4 @@
 
   })();
 
+// invoces function at the end
